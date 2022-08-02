@@ -2,7 +2,7 @@
 
 .vw-form {
     $font-size: 12px;
-    background-image: url("../../images/backgrounds/vip club web@2x.png");
+    background-image: url("../../images/vip club web@2x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,7 +34,7 @@
         display: block;
         width: 100%;
         max-width: 100%;
-        padding: 10px / $font-size * 1em 16px / $font-size * 1em;
+        padding: calc(10px / $font-size) * 1em calc(16px / $font-size) * 1em;
         background-color: #202255;
         border: 1px solid transparent;
         transition: all 180ms ease-in-out;
@@ -80,7 +80,7 @@
     button {
         font-size: getMinMax(12px, 12px);
         min-height: getMinMax(44px, 44px);
-        border-radius: 8px / $font-size * 1em;
+        border-radius: calc(8px / $font-size) * 1em;
     }
 
     button {

@@ -1,9 +1,5 @@
 import React from 'react';
 import "./footer.scss";
-import Icon1 from "../../images/Frame.svg";
-import Icon2 from "../../images/Frame-1.svg";
-import Icon3 from "../../images/Frame-2.svg";
-import Icon4 from "../../images/Frame-3.svg";
 
 const Footer = () => {
     return (
@@ -22,10 +18,10 @@ const Footer = () => {
                     </div>
                     <div className="footer-form">
                         <ul className="footer-icons list-style-reset">
-                            <li><img src={Icon1} alt="Superbonus"/></li>
-                            <li><img src={Icon4} alt="Superbonus"/></li>
-                            <li><img src={Icon3} alt="Superbonus"/></li>
-                            <li><img src={Icon2} alt="Superbonus"/></li>
+                            <li><img src={`./icons/service.svg`} alt="Superbonus"/></li>
+                            <li><img src={`./icons/service-3.svg`} alt="Superbonus"/></li>
+                            <li><img src={`./icons/service-2.svg`} alt="Superbonus"/></li>
+                            <li><img src={`./icons/service-1.svg`} alt="Superbonus"/></li>
                         </ul>
                         <p className="copy">Copyright © {new Date().getFullYear()} Casino-Leitfaden. Alle Rechte
                             vorbehalten.</p>

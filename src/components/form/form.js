@@ -2,7 +2,7 @@ import React from 'react';
 import "./form.scss";
 import {Link} from "gatsby";
 import Button from "../button/button";
-import Image from "../../images/images/korona.png";
+import Image from "../../images/korona.png";
 
 const Form = () => {
     return (
