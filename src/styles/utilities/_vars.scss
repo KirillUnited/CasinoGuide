@@ -1,0 +1,23 @@
+$grid-breakpoints: (
+        "xs": 576px,
+        "sm": 767px,
+        "md": 991px,
+        "lg": 1199px,
+        "xl": 1376px
+);
+$base: 16px;
+$base-viewport-mobile: 390px;
+$typography-variants: h1,
+h2,
+h3,
+h4;
+$h1-font-size: 56px !default;
+$h2-font-size: 32px !default;
+$h3-font-size: 21px !default;
+$h4-font-size: 18px !default;
+$text-font-size: 14px !default;
+$h1-font-size-sm: 28px !default;
+$h2-font-size-sm: 24px !default;
+$h3-font-size-sm: 21px !default;
+$h4-font-size-sm: 18px !default;
+$text-font-size-sm: 14px !default;

@@ -1,0 +1,9 @@
+:root {
+    --font-main: 'Poppins', sans-serif;
+    --body-bg-color: #07091D;
+    --text-color-1: #FFFFFF;
+    --text-color-2: #A3A8EF;
+    --color-1: #3343CD;
+    --color-2: #13152F;
+    --logo-color: var(--text-color-1);
+}

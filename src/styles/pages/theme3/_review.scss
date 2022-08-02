@@ -1,0 +1,58 @@
+@import "../../components/_rating";
+
+.vw-review {
+    padding-left: 0;
+
+    &-img {
+        position: relative;
+        background-color: #bababa;
+    }
+
+    &-content {
+        background-color: var(--colorPrimary);
+    }
+
+    &-stats {
+        width: Max(0px, Min(getrem(480px), #{percentage(480 / 1100)}));
+        padding-top: 4rem;
+    }
+
+    &-author {
+        display: flex;
+        align-items: center;
+        margin-top: getrem(30px);
+
+        .vw-review-img {
+            width: getrem(40px);
+            height: getrem(40px);
+            margin-right: 10px;
+        }
+
+        .vw-review-title {
+            font-family: "Lato";
+            font-size: getrem(11px);
+        }
+    }
+
+    .more {
+        opacity: 0.5;
+        color: #333;
+    }
+
+    @include less-sm() {
+        &-img {
+            top: auto;
+            left: auto;
+            transform: none;
+        }
+
+        &-title {
+            margin-left: 0;
+        }
+
+        &-content {
+            display: block;
+            padding-top: getvw(25px);
+        }
+    }
+}

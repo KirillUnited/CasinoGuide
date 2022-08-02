@@ -1,0 +1,43 @@
+@import "../../styles/utilities/vars";
+@import "../../styles/utilities/funcs";
+@import "../../styles/utilities/mixins";
+
+.header {
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: Min(#{getvw(5px)}, #{getrem(5px)});
+
+        &-item {
+            color: #CDD0F3;
+            &>a {
+                color: inherit;
+            }
+        }
+    }
+
+    &-link {
+        display: inline-flex;
+        align-items: center;
+        gap: calc(8/14)*1em;
+        font-style: normal;
+        font-weight: 500;
+        font-size: Min(getvw(9px), getrem(14px));
+        line-height: calc(24px / 14px);
+        text-transform: capitalize;
+        padding: Min(#{getvw(7px)}, #{getrem(12px)});
+
+        &-icon {
+            width: calc(16/14)*1em;
+            height: calc(16/14)*1em;
+        }
+    }
+
+    @include less-sm() {
+        &-link {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

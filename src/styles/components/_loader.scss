@@ -1,0 +1,65 @@
+/* Loader */
+.loader {
+    background: rgba(255, 255, 255, 0.9);
+
+    .progress {
+        flex-direction: column;
+        align-items: center;
+        grid-gap: Min(20px, #{getvw(20px)});
+        transform: translate(0, -50%);
+        background-color: transparent;
+
+        &-bar {
+            height: Max(7px, Min(14px, #{getvw(14px)}));
+            align-self: flex-start;
+        }
+
+        &-text {
+            font-size: Max(14px, Min(22px, #{getvw(22px)}));
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #4d4d4d;
+        }
+
+        &-value {
+            font-family: "Circular Std Med";
+            font-weight: 500;
+            color: #333333;
+        }
+    }
+
+    &-spin {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:before {
+            display: block;
+            content: '';
+            border: 6px solid #f3f3f31a;
+            border-radius: 50%;
+            border-top: 6px solid #1d3f72;
+            width: Max(20px, Min(50px, #{getvw(50px)}));
+            border-left: 6px solid #1d3f72;
+            border-right: 6px solid #1d3f72;
+            height: Max(20px, Min(50px, #{getvw(50px)}));
+            animation: spin-loader 2s linear infinite;
+        }
+
+        &#coverLoader {
+            width: auto;
+            height: auto;
+            background: transparent;
+            border: none;
+            animation: none;
+        }
+    }
+}
+
+@keyframes spin-loader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

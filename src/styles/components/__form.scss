@@ -1,0 +1,87 @@
+.vw-form {
+    $font-size: 16px;
+    // end vars
+    font-size: Max(16px / $font-size * 1em, 1em);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &-title {
+        margin-bottom: 37px;
+    }
+
+    &-input,
+    input[type="name"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        font-family: SourceSansPro;
+        font-size: inherit;
+        // Capitalized to prevent Sass
+        // thinking it's the Sass max()
+        font-size: Max(14px / $font-size * 1em, 1em);
+        font-family: inherit;
+        padding: 20px / $font-size * 1em 26px / $font-size * 1em;
+        background-color: #faf8f8;
+        border: 1px solid #f2f2f2;
+        transition: all 180ms ease-in-out;
+        box-shadow: none;
+        margin-bottom: 0;
+
+        @include input-placeholder {
+            color: hsla(0, 0%, 20%, 0.5);
+        }
+
+        &:not(textarea) {
+            line-height: 1;
+            min-height: 60px;
+        }
+
+        &:focus {
+            background-color: #fff;
+            border-bottom: 1px solid #000000;
+            outline: 0;
+            outline-offset: 0;
+        }
+
+        &:focus:invalid {
+            border-bottom: 1px solid #b04949;
+
+            &+.error-msg {
+                display: block;
+            }
+        }
+
+        &+.error-msg {
+            display: none;
+            color: #b04949;
+            font-family: inherit;
+            font-size: 14px / $font-size * 1em;
+            margin-top: 12px;
+        }
+    }
+
+    &-group {
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+
+        &+.vw-form-group {
+            margin-top: Max(25px / $font-size * 1em, Min(25px, getvw(25px)));
+        }
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button,
+    .vw-button,
+    a.vw-button,
+    button.vw-button {
+        font-size: Max(14px / $font-size * 1em, 1em);
+    }
+}

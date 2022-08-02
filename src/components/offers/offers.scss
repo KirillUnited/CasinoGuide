@@ -1,0 +1,37 @@
+@import "../../styles/utilities";
+
+.offers {
+    &-inner {
+        padding-bottom: getvw(40px);
+    }
+    &-list {
+        padding-top: getMinMax(20px, 20px);
+        padding-bottom: getMinMax(20px, 20px);
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: getMinMax(14px, 14px);
+            color: #EB5757;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(Min(100%, 364px), 1fr));
+            gap: getMinMax(16px, 16px);
+        }
+
+        & + .offers-list {
+            border-top: 1px dashed #eb575799;
+        }
+    }
+
+    @include more-sm() {
+        &-inner {
+            padding-top: getMinMax(20px, 40px);
+            padding-bottom: getMinMax(20px, 40px);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.vw-form {
+    &-title {
+        font-family: "SourceSansPro";
+        font-weight: 400;
+    }
+
+    &-input,
+    input[type="name"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        background-color: var(--colorPrimary);
+    }
+}

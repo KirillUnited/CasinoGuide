@@ -1,0 +1,20 @@
+/*-- Tags --*/
+.tag {
+    @include tag();
+
+    &-disabled {
+        --color: #8fb4fc;
+        --fontFamily: 'Circular Std Book';
+
+        font-weight: normal;
+        pointer-events: none;
+    }
+}
+
+.tag {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: Max(0.5em, Min(15px, #{getvw(15px)}));
+    }
+}

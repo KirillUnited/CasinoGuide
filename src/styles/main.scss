@@ -1,0 +1,13 @@
+@import "./utilities";
+@import "./base/reset";
+@import "./base/typography";
+@import "./helpers/helpers";
+@import "./layout/layout";
+
+body {
+    color: var(--text-color-2);
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    background: var(--body-bg-color);
+}

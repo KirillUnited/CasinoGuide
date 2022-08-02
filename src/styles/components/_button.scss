@@ -1,0 +1,6 @@
+/* Button */
+.button {
+    $fontSize: 22px;
+    @include button($fontSize);
+    margin-bottom: 0;
+}

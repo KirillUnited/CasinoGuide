@@ -1,0 +1,66 @@
+@import "../../styles/utilities";
+
+.subscribe {
+    background-color: #121327;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    &-info {
+        width: min(100%, 515px);
+    }
+
+    &-form {
+        width: min(100%, 420px);
+    }
+
+    .guide-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #47A9E9;
+        font-weight: 500;
+        font-size: getMinMax(16px, 16px);
+    }
+
+    p {
+        font-size: getMinMax(14px, 16px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include less-sm() {
+        &-inner {
+            flex-direction: column-reverse;
+            padding-top: 0;
+            padding-bottom: getvw(40px);
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: getrem(17px);
+            padding-right: getrem(17px);
+        }
+        &-form {
+            width: 100%;
+            .vw-form {
+                border-radius: 0;
+            }
+        }
+        .vw-container {
+            width: 100%;
+        }
+        .logo {
+            width: getMinMax(130px, 130px);
+        }
+    }
+}

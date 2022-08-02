@@ -1,0 +1,71 @@
+/*-- Profile drawer-menu styles --*/
+.profile-drawer {
+    $fontSize: 14px;
+    --fontSize: #{$fontSize};
+
+    &-list {
+        padding: 10px 0;
+
+        & > * {
+            font-family: "Circular Std Book";
+            font-size: var(--fontSize);
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #b3b3b3;
+            white-space: nowrap;
+
+            &.active {
+                color: #1a1a1a;
+
+                span {
+                    font-size: 16px / $fontSize * 1em;
+                }
+            }
+
+            a {
+                all: inherit;
+                display: flex;
+                align-items: center;
+                padding: 10px / $fontSize * 1em 0;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-icon {
+        width: 30px / $fontSize * 1em;
+        height: 30px / $fontSize * 1em;
+        margin-right: 20px / $fontSize * 1em;
+    }
+
+    @include less-sm() {
+        overflow: visible;
+
+        &-list {
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+            overflow-x: scroll;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        & > * {
+            a {
+                padding-left: 15px / $fontSize * 1em;
+                padding-right: 15px / $fontSize * 1em;
+            }
+        }
+
+        &-icon {
+            margin-right: 10px / $fontSize * 1em;
+        }
+    }
+}
