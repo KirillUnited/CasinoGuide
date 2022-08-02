@@ -20,7 +20,7 @@
     &-link {
         display: inline-flex;
         align-items: center;
-        gap: calc(8/14)*1em;
+        //gap: calc(8/14)*1em;
         font-style: normal;
         font-weight: 500;
         font-size: Min(getvw(9px), getrem(14px));
@@ -31,6 +31,7 @@
         &-icon {
             width: calc(16/14)*1em;
             height: calc(16/14)*1em;
+            margin-right: calc(8/14)*1em;
         }
     }
 

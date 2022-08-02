@@ -53,7 +53,7 @@ const Card = ({image, bg, color, title = 'Title', index = 2, rating = 10.0, info
                         cardInfo
                     }
                 </ul>
-                <Button text="Go to casino" type="link" style={{alignSelf: "stretch", marginTop: "auto"}}/>
+                <Button text="Go to casino" type="link" style={{alignSelf: "stretch"}}/>
             </div>
         </div>
     )
