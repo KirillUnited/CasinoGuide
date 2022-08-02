@@ -34,17 +34,6 @@
         background-position: center right;
         background-size: cover;
 
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #535353;
-            mix-blend-mode: multiply;
-            opacity: 0.8;
-        }
-
         &-img {
             position: absolute;
             top: 50%;
@@ -60,6 +49,17 @@
             height: 100%;
             padding-bottom: 0;
             clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #535353;
+                mix-blend-mode: multiply;
+                opacity: 0.8;
+            }
         }
     }
 

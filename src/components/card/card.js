@@ -7,13 +7,11 @@ import Logo3 from "../../images/Visa_Inc._logo 1.svg";
 import Star from "../../images/star.svg";
 import Button from '../button/button';
 import Badge1 from "../../images/badge-1.svg";
-import Badge2 from "../../images/badge 2.svg";
-import Badge3 from "../../images/Best_offer.svg";
-import Crown from "../../images/crown.png";
+import CardBadge from "./cardBadge";
 
 const Logos = [Logo1, Logo2, Logo3];
 
-const Card = ({image, bg, color, title = 'Title', index = 2, rating = 10.0, info = [], type = ''}) => {
+const Card = ({image, bg, color, title = 'Title', index = 2, rating = 10.0, info = [], type = '', theme}) => {
     const cardInfo = info.map((item, index) => {
         return <li className='card-info-item' key={index}>
             <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
@@ -38,15 +36,7 @@ const Card = ({image, bg, color, title = 'Title', index = 2, rating = 10.0, info
                 backgroundColor: `${color}`,
                 backgroundImage: `${bg}`
             }}>
-                <div className={`card-badge ${type === "card-primary" ? "card-badge-primary" : ""}`}>
-                    <img className={`card-badge-label`} src={type === "card-primary" ? Badge3 : Badge2} alt="Badge"/>
-                    <div
-                        className={`card-badge-text text-truncate`}>
-                        {type === "card-primary" ?
-                            <img className="card-badge-icon" width={15} height={15} src={Crown} alt="Crown"/> : ''}
-                        <span className={`text-truncate`}>{type === "card-primary" ? "Best offer" : index}</span>
-                    </div>
-                </div>
+                <CardBadge type={type} index={index} theme={theme}/>
                 <div className='card-badge card-rating'>
                     <img className="card-badge-label" src={Badge1} alt="Badge"/>
                     <div className={`card-badge-text  text-truncate`}>

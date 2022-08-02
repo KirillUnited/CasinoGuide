@@ -9,9 +9,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import "./custom-props.css"
 import Header from "./header/header"
 // import "./layout.css"
-import "./custom-props.css"
 import "../styles/main.scss"
 import Footer from "./footer/footer";
 

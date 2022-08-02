@@ -9,11 +9,11 @@ import "../components/light-theme.scss";
 const IndexPage = () => (
     <Layout>
         <Hero/>
-        <Offers/>
+        <Offers theme="light"/>
         <Subscribe/>
     </Layout>
 );
 
-export const Head = () => <Seo title="Light Theme" />
+export const Head = () => <Seo title="Light Theme"/>;
 
-export default IndexPage
+export default IndexPage;

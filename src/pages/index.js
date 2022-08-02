@@ -8,7 +8,7 @@ import Subscribe from "../components/subscribe/subscribe";
 const IndexPage = () => (
   <Layout>
     <Hero/>
-    <Offers/>
+    <Offers theme="dark"/>
     <Subscribe/>
   </Layout>
 );
