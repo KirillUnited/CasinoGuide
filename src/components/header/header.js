@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
-import * as React from "react"
-import "./header.scss"
+import * as React from "react";
+import "./header.scss";
 import Picture from "../picture/Picture";
 
 const headerItems = [
@@ -28,6 +28,6 @@ const Header = (props) => (
       </nav>
     </div>
   </header>
-)
+);
 
 export default Header

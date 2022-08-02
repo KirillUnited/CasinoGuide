@@ -80,6 +80,9 @@
             & > svg {
                 width: getMinMax(10px, 12px);
                 height: getMinMax(10px, 12px);
+                path {
+                    fill: var(--text-color-2);
+                }
             }
         }
 
@@ -149,6 +152,17 @@
         background-size: cover;
         background-position: center bottom -1px;
         border: 1px solid #3343CD;
+
+        .card {
+            &-info {
+                &-item {
+                    color: #F5BA40;
+                    &>svg path {
+                        fill: #F5BA40;
+                    }
+                }
+            }
+        }
     }
 
     @include more-sm() {
