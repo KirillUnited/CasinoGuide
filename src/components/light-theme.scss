@@ -1,0 +1,37 @@
+:root {
+    --font-main: 'Poppins', sans-serif;
+    --body-bg-color: #F6F6F6;
+    --text-color-1: #282626;
+    --text-color-2: #282626;
+    --color-1: #27AE60;
+    --color-2: #FFFFFF;
+    --logo-color: var(--text-color-1);
+}
+
+.header {
+    background-color: #E9F7EF;
+
+    &-menu {
+        &-item {
+            color: #174F2E;
+        }
+    }
+
+    .img-bg {
+        display: none;
+    }
+}
+
+.card {
+    background-image: none;
+    border: 1px solid rgba(39, 174, 96, 0.7);
+    box-shadow: 0px 6px 20px rgba(39, 174, 96, 0.04);
+
+    &-primary {
+        .card {
+            &-info-item {
+                color: var(--text-color-2);
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Title`,
+    title: `CasinoGuide`,
     description: `Description`,
     author: `author`,
     siteUrl: `https://site.com`,
