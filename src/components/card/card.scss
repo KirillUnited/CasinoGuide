@@ -130,13 +130,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 5px;
+            //gap: 5px;
             padding: 5px;
         }
 
         &-icon {
             width: getMinMax(15px, 15px);
             height: getMinMax(15px, 15px);
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         &.card-rating {
