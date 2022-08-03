@@ -94,10 +94,9 @@
                     fill: var(--text-color-2);
                 }
             }
-        }
-
-        &-icon {
-            margin-left: auto;
+            &>*+* {
+                margin-left: getMinMax(10px, 10px);
+            }
         }
 
         &-text {

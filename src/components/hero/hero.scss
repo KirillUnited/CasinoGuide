@@ -21,7 +21,8 @@
 
     &-desc {
         &-item {
-            display: flex;
+            display: grid;
+            grid-template-columns: auto 1fr;
             align-items: center;
             gap: 20px;
             font-family: 'Inter', sans-serif;

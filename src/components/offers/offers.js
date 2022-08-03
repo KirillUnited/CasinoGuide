@@ -15,7 +15,7 @@ const Offers = ({theme}) => {
                     <div className='offers-list'>
                         <h5 className='offers-list-title'>
                             <img  width={20} height={20} src={titleIcon} alt="Top Casinos" />
-                            <span>Top Casinos</span>
+                            <span className='text-clamp'>Top Casinos</span>
                         </h5>
                         <div className='offers-list-grid'>
                             {offers["Top offers"].map(({ color, title, rating, info }, index) => {
