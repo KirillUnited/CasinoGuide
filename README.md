@@ -1,4 +1,8 @@
-DEMO - https://animated-toffee-910862.netlify.app/
+<h1>
+  <a href="https://animated-toffee-910862.netlify.app/">
+    DEMO
+  </a>
+</h1>
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
